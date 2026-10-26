@@ -22,17 +22,17 @@
 </head>
 <body>
     <h1>VasoLog - Privacy Policy</h1>
-    <p class="updated">Last updated: September 14, 2026</p>
+    <p class="updated">Last updated: October 27, 2026</p>
 
     <h2>Overview</h2>
     <p>VasoLog ("the App") is a personal health tracker for Raynaud's Phenomenon developed by <strong>Aliaksandr Abrashkin</strong> (individual developer). We are committed to protecting your privacy. This policy describes what data we collect, how we use it, and your rights.</p>
 
     <h2>Data We Collect</h2>
 
-    <h3>Health data (stays on your device)</h3>
+    <h3>Health data (on your device, never sent to us)</h3>
     <ul>
-        <li><strong>Attack records</strong> - severity, duration, color phase, triggers, affected fingers, notes. Stored locally on your device only.</li>
-        <li><strong>Photos</strong> - optional photos of affected areas. Stored locally on your device only.</li>
+        <li><strong>Attack records</strong> - severity, duration, color phase, triggers, affected fingers, notes. Stored on your device and never sent to us.</li>
+        <li><strong>Photos</strong> - optional photos of affected areas. Stored on your device and never sent to us.</li>
         <li><strong>Weather data</strong> - temperature, humidity, pressure, wind speed. Cached locally for 30 minutes.</li>
     </ul>
 
@@ -40,16 +40,16 @@
     <ul>
         <li><strong>Approximate location</strong> - your approximate coordinates are sent to the Open-Meteo weather API to fetch current weather. No account, API key, or device identifier is attached. Open-Meteo may keep technical server logs (which can include the coordinates and IP address) for a limited period as described in their terms; this data is not linked to your identity.</li>
         <li><strong>Crash & diagnostic data</strong> - if the app crashes or hits an error, we send the stack trace, device model, OS version, app version, and basic performance/diagnostic data to Sentry so we can fix bugs and improve stability. No health data, photos, or attack records are included. Each install is identified only by a randomly generated identifier used to group reports; we do not collect names, emails, phone numbers, or advertising IDs.</li>
-        <li><strong>Anonymous usage analytics (with your consent)</strong> - if you accept analytics, anonymous statistics about which screens you open and which features you use (for example, logging an attack or generating a report) are sent to PostHog. This data never includes your attack details, notes, photos, weather, or any health data, and is not linked to your real-world identity. Analytics are active only after you accept the privacy policy, and you can turn them off at any time using the "Anonymous analytics" toggle on the app's Info tab.</li>
+        <li><strong>Anonymous usage analytics (with your consent)</strong> - if you accept analytics, anonymous statistics about which screens you open and which features you use (for example, logging an attack or generating a report) are sent to PostHog. These events record that an action happened and when (for example, that an entry was saved or a report was created). They never include what you entered: attack details such as severity, fingers, triggers or duration, notes, photos, weather or location, and they are not linked to your real-world identity. In app versions up to 1.1.13, two events also carried a number: how many entries you had when the subscription screen opened, and how many days had passed since your last recorded attack when you reached a milestone such as 7 days. From version 1.1.14 these numbers are no longer sent. Analytics are active only after you accept the privacy policy, and you can turn them off at any time using the "Anonymous analytics" toggle on the app's Info tab.</li>
         <li><strong>Subscription status</strong> - payments are processed by Apple. To unlock Premium, the app sends an anonymous app user ID and your App Store purchase records to RevenueCat. No health data, photos, or attack records are included.</li>
     </ul>
 
     <h2>How We Use Your Data</h2>
     <ul>
-        <li>All health data is stored exclusively on your device.</li>
+        <li>Health data is stored on your device and is never sent to us or to third parties.</li>
         <li>Location coordinates are sent to Open-Meteo API only to retrieve current weather conditions.</li>
         <li>Crash and diagnostic data are used solely to improve the app's stability. They are never sold, shared, or used for advertising.</li>
-        <li>Anonymous usage analytics, when enabled, are used only to understand how the app is used so we can improve it. They contain no health data and are never used for advertising.</li>
+        <li>Anonymous usage analytics, when enabled, are used only to understand how the app is used so we can improve it. They never contain what you enter in your diary and are never used for advertising.</li>
         <li>Subscription status is checked with RevenueCat only to unlock Premium features.</li>
         <li>We do not run ads and do not use advertising tracking SDKs.</li>
         <li>We do not sell, share, or transfer any personal data to third parties beyond the services listed below.</li>
@@ -60,7 +60,7 @@
         <li><strong>Open-Meteo API</strong> (open-meteo.com) - receives approximate geographic coordinates to provide weather data. Free and open-source service. No API key required. May retain technical server logs for a limited period; see <a href="https://open-meteo.com/en/terms">Open-Meteo Terms of Service</a>.</li>
         <li><strong>RevenueCat</strong> (RevenueCat, Inc., USA) - receives an anonymous app user ID and App Store purchase records to manage subscriptions. Processed under <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</li>
         <li><strong>Sentry</strong> (Functional Software, Inc., USA) - receives crash, error, and performance diagnostics. Sending of personally identifiable information is disabled. Processed under <a href="https://sentry.io/privacy/">Sentry's Privacy Policy</a>.</li>
-        <li><strong>PostHog</strong> (PostHog, Inc., USA; data hosted on EU Cloud) - receives anonymous product-analytics events, and only after you give consent. No health data is sent. Processed under <a href="https://posthog.com/privacy">PostHog's Privacy Policy</a>.</li>
+        <li><strong>PostHog</strong> (PostHog, Inc., USA; data hosted on EU Cloud) - receives anonymous product-analytics events, and only after you give consent. The events never contain what you enter in your diary (see above). Processed under <a href="https://posthog.com/privacy">PostHog's Privacy Policy</a>.</li>
     </ul>
     <p>These third-party providers are required to protect your data to the same standard described in this policy and may not use it for advertising.</p>
 
@@ -75,15 +75,15 @@
     <h2>Data Storage and Security</h2>
     <ul>
         <li>Health data (attack records, photos, notes) is stored locally on your device using the operating system's secure app-private storage (the app sandbox), isolated from other apps.</li>
-        <li>No cloud sync or backup of health data is performed.</li>
+        <li>VasoLog has no servers or cloud sync for health data. If iCloud Backup or a computer backup is turned on, iOS includes the app's data, including your health data and photos, in your own device backup, as it does for other apps. You manage these backups in your device settings; we have no access to them.</li>
         <li>Crash and diagnostic data are transmitted over HTTPS to Sentry servers and processed under their standard data protection terms.</li>
-        <li>Deleting the app removes all locally stored health data permanently.</li>
+        <li>Deleting the app removes all health data from the device. Copies in an iCloud or computer backup remain until you delete those backups in your device settings.</li>
     </ul>
 
     <h2>Your Rights</h2>
     <ul>
-        <li>You can export your data via PDF reports at any time.</li>
-        <li>You can delete all data by uninstalling the app.</li>
+        <li>With VasoLog Premium, you can export your records as PDF reports.</li>
+        <li>You can delete all data from the device by uninstalling the app; backups are managed in your device settings.</li>
         <li>You can withdraw analytics consent at any time via the "Anonymous analytics" toggle on the app's Info tab.</li>
         <li>You can revoke location permission in your device settings.</li>
         <li>The app works fully offline (except weather features).</li>
